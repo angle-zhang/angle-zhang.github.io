@@ -24,24 +24,19 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="content-container" style={{backgroundColor: `#172F22`}}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: `85vw`,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
-    </>
+    </div>
   )
 }
 
