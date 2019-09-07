@@ -7,25 +7,28 @@ import Button from "./button"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#172F22`,
+      position: `fixed`,
+      width:` 100%`,
+      top: `0`,
+      backgroundColor: `transparent`,
       marginBottom: `1.45rem`,
     }}
   >
     <div className="header-container"
       style={{
         margin: `0 auto`,
-        maxWidth: `85vw`,
+        maxWidth: `90vw`,
         padding: `2.4rem 1.0875rem`,
       }}
     >
 
-      <Link to="/">
+      <Link name="home" to="/">
         <div className="home-button"></div>
       </Link> 
 
       <div> 
-      <Button redirect="about"> </Button>
-    <Button redirect="work"> </Button> 
+      <Button url="/about">about</Button>
+      <Button url="#work">work</Button> 
       </div>
 
     </div>
@@ -34,7 +37,9 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  children: PropTypes.node.isRequired
 }
+
 
 Header.defaultProps = {
   siteTitle: ``,

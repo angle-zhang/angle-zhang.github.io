@@ -1,0 +1,7 @@
+{
+    "title": "CMMND Visualizer", 
+    "date": "", 
+    "description": "Built an interactive music visualizer for the release of CMMND's EP with one other developer. Learned three.js and implemented the project structure, 3 of 6 scenes, and dynamic scene updates based on audio data.",
+    "link": "https://ucla-creative-labs.github.io/cmmnd",
+    "tags": ["html/css", "three.js", "tween.js"]
+}

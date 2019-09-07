@@ -1,5 +1,6 @@
 import React from "react"
-import Scroll from "../components/scroll"
+import Scroll from "./scroll"
+import CircleImage from "./circleImage"
 
 const skills = { 
     "Web Dev": ["html5", "css3", "js", "react.js", "redux.js"],
@@ -16,7 +17,9 @@ class SkillCategory extends React.Component {
     }
 
     handleClick(e) { 
-        e.target.nextElementSibling.style.display = "block"
+        let el = e.target.nextElementSibling;
+        !this.state.active ? el.className += " open" : el.classList.remove("open");
+        this.setState( (state) => ( {active: !state.active} ));
     }
 
     render() { 
@@ -24,21 +27,22 @@ class SkillCategory extends React.Component {
             <div>
                 <h2 onClick={e => this.handleClick(e)}> {this.props.title} </h2>
                 <div className="skill-elements"> 
-                {this.props.elements.map( el => <p> {el} </p> )}
+                <ul>{this.props.elements.map( el => <li> {el} </li> )}</ul>
                 </div> 
             </div> 
         )
     }
  }
 
-const Landing = () => ( 
+const Landing = (props) => ( 
     <div>
-        <h1>ANGELA ZHANG</h1>
-        <div> 
-            {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} 
+        <div className="content-container landing-container"> 
+        <h1 style={{paddingTop: `35vh`, width: `400px`}}>ANGELA ZHANG</h1>
+        <section id="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
         </div> 
+        <CircleImage img={props.img}/> 
         <Scroll down /> 
-    </div>
+</div>
 )
 
 

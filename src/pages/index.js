@@ -1,19 +1,35 @@
 import React from "react"
 
-import Work from "./work"
+import { graphql } from "gatsby"
+import Work from "../components/work"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Landing from "../components/landing"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Portfolio" />
-    <Landing></Landing> 
-    <Work></Work> 
+    <Landing img={data.file.childImageSharp.fixed}></Landing> 
+    <div id="work"> 
+      <Work />
+    </div>
   </Layout>
 )
+
+
+// must be in pages directory to be queried by graphql https://github.com/gatsbyjs/gatsby/issues/5102
+export const query = graphql`
+    query {
+        file(relativePath: { eq: "landing.jpg" }) {
+            childImageSharp {
+              fixed(width: 600, height: 600){
+                ...GatsbyImageSharpFixed
+              }
+            }
+        }      
+    }
+`
 
 
 export default IndexPage

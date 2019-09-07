@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 20px;
+    }
+    50% {
+      bottom: 40px;
+    }
+  }
+
 .header-container { 
     display: flex;
     flex-direction: row;
@@ -9,8 +18,30 @@
 }
 
 .content-container { 
-    width: 100vw;
+    width: auto;
     min-height: 100vh;
+}
+
+.landing-container { 
+    display:flex;
+    padding-top: 170px;
+    justify-content: space-between;
+}
+
+.project-container { 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-button, .redirect-button, .scroll-button { 
+    cursor: pointer
 }
 
 .home-button { 
@@ -26,14 +57,92 @@
     padding-left: 24px;
     padding-right: 24px;
     margin-left: 3em;
-
+    width: 80px;
 }
 
+.skill-elements:before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #B30000;
+    margin-bottom: 30px;
+}
+
+
 .skill-elements { 
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+    
+}
+
+.open.skill-elements { 
+    max-height: 320px;
 }
 
 .scroll-button { 
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    position: absolute;
+    bottom: 20px;
+
+    animation: MoveUpDown 2s cubic-bezier(0.8, 0.7, .6, 0.9) infinite;
+}
+
+.circle { 
+    border-radius: 50%;
+    border: solid white 1px;
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: #112219 0px 0px 10px;
+}
+
+.square { 
+    width: 8px;
+    height: 8px;
+    background-color: #B30000;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.center { 
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sm-text-box { 
+    opacity: .8;
+    width: 45vw;
+}
+
+.tags { 
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.tags li { 
+    margin-right: 50px;
+
+}
+
+.react-tag { 
+    background-color: #B30000 !important;
+}
+
+.tag { 
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
 }
