@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: rgb(23, 47, 34);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -238,7 +239,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   font-family: 'Playfair Display';
   text-rendering: optimizeLegibility;
   font-size: 3rem;
@@ -254,7 +255,7 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.rem;
   font-family: 'Playfair Display';
   text-rendering: optimizeLegibility;
   font-size: 2rem;

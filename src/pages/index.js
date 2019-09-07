@@ -5,9 +5,12 @@ import Work from "../components/work"
 
 import Layout from "../components/layout"
 import Landing from "../components/landing"
+import Loader from "../components/loader"
 import SEO from "../components/seo"
 
 const IndexPage = ({data}) => (
+  <>
+  <Loader/>
   <Layout>
     <SEO title="Portfolio" />
     <Landing img={data.file.childImageSharp.fixed}></Landing> 
@@ -15,6 +18,7 @@ const IndexPage = ({data}) => (
       <Work />
     </div>
   </Layout>
+  </>
 )
 
 

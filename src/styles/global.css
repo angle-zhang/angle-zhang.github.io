@@ -11,6 +11,13 @@
     }
   }
 
+@keyframes pulse {
+    from { transform: scale(1); opacity: .6}
+    50% { transform: scale(0.75); opacity: 1}
+    to { transform: scale(1); opacity: .6 }
+}
+  
+
 .header-container { 
     display: flex;
     flex-direction: row;
@@ -28,6 +35,14 @@
     justify-content: space-between;
 }
 
+.about-container { 
+    display: flex;
+    flex-direction: row;
+    padding: 8vw;
+    padding-top: 24vh;
+    justify-content: space-evenly;
+}
+
 .project-container { 
     height: 100vh;
     display: flex;
@@ -35,9 +50,32 @@
     justify-content: space-around;
 }
 
+.loading-screen { 
+    display: block; 
+    position:fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(23, 47, 34);
+    opacity: 1;
+}
+
+.loading-screen.close { 
+    opacity: 0;
+    visibility: hidden;
+
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.name-header { 
+    width: 16rem;
+    text-align: right;
+}
+
 .project-info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .home-button, .redirect-button, .scroll-button { 
@@ -52,21 +90,29 @@
 }
 
 .redirect-button {
-    height: 16px;
+    display: inline-block;
+    height: auto;
     border: 1px solid white;
     padding-left: 24px;
     padding-right: 24px;
     margin-left: 3em;
-    width: 80px;
+    width: auto;
 }
 
-.skill-elements:before {
+.skill-elements:before, .name-header:after {
     content: "";
     display: block;
     border-bottom: 1px solid #B30000;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
 }
 
+.name-header:after { 
+    margin: 20px;
+    width: 150px;
+    position:relative;
+    right: -115px;
+}
 
 .skill-elements { 
     max-height: 0px;
@@ -100,6 +146,15 @@
     box-shadow: #112219 0px 0px 10px;
 }
 
+.circle.loading { 
+    width: 20px; 
+    height: 20px; 
+    z-index: 101;
+    background-color: white;
+
+    animation: pulse 1s linear infinite;
+}
+
 .square { 
     width: 8px;
     height: 8px;
@@ -119,6 +174,11 @@
 
 .sm-text-box { 
     opacity: .8;
+    width: 35vw;
+}
+
+.mm-text-box { 
+    opacity: .8;
     width: 45vw;
 }
 
@@ -136,6 +196,14 @@
 
 .react-tag { 
     background-color: #B30000 !important;
+}
+
+.three-tag { 
+    background-color: #FFD600 !important;
+}
+
+.html-tag {
+    background-color: #2F3889 !important;
 }
 
 .tag { 

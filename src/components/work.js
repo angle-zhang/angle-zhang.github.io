@@ -1,6 +1,5 @@
 import React from "react"
 import Project from "./project"
-
 import { StaticQuery, graphql } from "gatsby"
 
 const Work = () => (
@@ -12,7 +11,7 @@ const Work = () => (
                         node { 
                             title
                             description
-                            link
+                            links 
                             tags
                         }
                     }
@@ -23,7 +22,10 @@ const Work = () => (
         render = {data =>{ 
             var projects = [];
             data.allProjectsJson.edges.forEach( (project) => { 
-                projects.push( <Project title={project.node.title} desc={project.node.description} tags={project.node.tags} link={project.node.link}></Project> );
+                projects.push( 
+                    <Project title={project.node.title} desc={project.node.description} tags={project.node.tags} links={project.node.links}>
+                    </Project>
+                );
             })
               
             return ( projects );

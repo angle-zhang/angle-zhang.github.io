@@ -37,11 +37,12 @@ class SkillCategory extends React.Component {
 const Landing = (props) => ( 
     <div>
         <div className="content-container landing-container"> 
-        <h1 style={{paddingTop: `35vh`, width: `400px`}}>ANGELA ZHANG</h1>
+        <h1 className="name-header" style={{paddingTop: `35vh`}}>ANGELA ZHANG</h1>
+        <hr/>
         <section id="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
         </div> 
         <CircleImage img={props.img}/> 
-        <Scroll down /> 
+        <Scroll down/> 
 </div>
 )
 
