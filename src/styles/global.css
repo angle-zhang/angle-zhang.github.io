@@ -77,9 +77,10 @@
     align-items: flex-start;
 }
 
-.home-button, .redirect-button, .scroll-button { 
+.home-button, .redirect-button, .scroll-button, .open-button { 
     cursor: pointer
 }
+
 
 .home-button { 
     background-color: #B30000;
@@ -212,4 +213,12 @@
     width: 10px;
     height: 10px;
     background-color: white;
+}
+
+/* resume */
+.resume-container { 
+    position: relative;
+    z-index: 0;
+    opacity: .8;
+    margin-top: 6.5rem;
 }

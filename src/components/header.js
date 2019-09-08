@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
       top: `0`,
       backgroundColor: `transparent`,
       marginBottom: `1.45rem`,
+      zIndex: `500`
     }}
   >
     <div className="header-container"

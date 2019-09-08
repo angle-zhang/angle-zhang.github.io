@@ -26,7 +26,7 @@ class SkillCategory extends React.Component {
     render() { 
         return (
             <div>
-                <h2 onClick={e => this.handleClick(e)}> {this.props.title} </h2>
+                <h2 class="open-button" onClick={e => this.handleClick(e)}> {this.props.title} </h2>
                 <div className="skill-elements"> 
                 <ul>{this.props.elements.map( el => <li> {el} </li> )}</ul>
                 </div> 

@@ -1,15 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Loader from "../components/loader"
 import RedirectButton from "../components/redirectButton"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
 const About = () => (
-  <>
-  <Loader/>
-  <Layout>
+
+  <Layout load>
     <div class="about-container"> 
     <SEO title="Page two" />
     <div className="name-header"> 
@@ -24,7 +22,6 @@ const About = () => (
     </div>
     </div> 
   </Layout>
-  </>
 )
 
 export default About;
