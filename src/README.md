@@ -1,11 +1,28 @@
+
 # Features
+1. Lazy loading of Images using [Gatsby-image](https://www.gatsbyjs.org/docs/using-gatsby-image/)
+2. Simplified image querying with ImageTwo component
+3. Static files (.json) automatically generates projects in the work component
 
 
-## Dynamic Pages using [MDX](https://github.com/mdx-js/mdx)
+# Process and Documentation
+## Using Gatsby
+This was my first time using gatsby to create a website. I chose gatsby because I wanted something that was quick and easy to use but also gave me the option to eventually scale my portfolio to include a blog or a shop. 
 
-## Lazy loading Images using [Gatsby-image](https://www.gatsbyjs.org/docs/using-gatsby-image/)
+## Build and Deploy
 
-1. Static files for project data (https://github.com/flexdinesh/portfolio/blob/master/src/components/IBuildSection/IBuildSection.js)
-Look at portfolioItems, this is queried and generated from a js file
+## [Design Mock Up] (https://www.figma.com/file/WHoS2EHGKRhFNivfMWsPWv/portfolio?node-id=12%3A9)
+
+## Responsive Design 
+Typical sizes used
++320px.
++480px.
++600px.
++768px.
++900px.
++1024px.
++1200px.
+
+# Future Features
 2. .md is for blog posts / pagination 
 3. 

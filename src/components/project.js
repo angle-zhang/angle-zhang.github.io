@@ -27,7 +27,7 @@ const projectIcon = () => (
 
 const Project = (props) => (
     <div class="project-container">
-        <div class="circle" style={{width: '240px', height: '240px'}}></div>
+        <div class="circle project-icon" style={{width: '240px', height: '240px'}}></div>
             <div class="project-info">
             <h1>{props.title}</h1>
             <div>

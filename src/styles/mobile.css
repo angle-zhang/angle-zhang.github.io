@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) { 
+    .categories  {
+        display:none;
+    }
+    .project-icon { 
+        display: none;
+    }
+    .about-container { 
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .about-text-box { 
+        padding-top: 10px
+    }
+
+    .sm-text-box, .name-header { 
+        width: 100%;
+        text-align: center;
+    }
+    
+}

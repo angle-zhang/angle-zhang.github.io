@@ -25,12 +25,12 @@ class SkillCategory extends React.Component {
 
     render() { 
         return (
-            <div>
-                <h2 class="open-button" onClick={e => this.handleClick(e)}> {this.props.title} </h2>
+            <>
+                <h2 class="category" onClick={e => this.handleClick(e)}> {this.props.title} </h2>
                 <div className="skill-elements"> 
                 <ul>{this.props.elements.map( el => <li> {el} </li> )}</ul>
                 </div> 
-            </div> 
+            </> 
         )
     }
  }
@@ -40,7 +40,7 @@ const Landing = (props) => (
         <div className="content-container landing-container"> 
         <h1 className="name-header" style={{paddingTop: `35vh`}}>ANGELA ZHANG</h1>
         <hr/>
-        <section id="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
+        <section class="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
         </div> 
         <CircleImage src={"landing.jpg"}/> 
         <Scroll down/> 

@@ -1,6 +1,3 @@
-/*  Props 
-    @src: relative path of image 
-*/
 
 import React from 'react';
 import Image from 'gatsby-image';

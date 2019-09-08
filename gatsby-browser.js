@@ -5,6 +5,6 @@
  */
 
 import "./src/styles/global.css";
-
+import "./src/styles/mobile.css";
 
 // You can delete this file if you're not using it

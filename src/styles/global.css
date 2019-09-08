@@ -53,7 +53,7 @@
 .loading-screen { 
     display: block; 
     position:fixed;
-    z-index: 100;
+    z-index: 999;
     width: 100vw;
     height: 100vh;
     background-color: rgb(23, 47, 34);
@@ -69,6 +69,24 @@
 .name-header { 
     width: 16rem;
     text-align: right;
+    position:relative;
+    z-index: 101;
+}
+
+.categories { 
+    position:relative;
+    z-index: 101;
+}
+
+.category { 
+    width: 208px;
+    transition: all .8s ease-in-out;
+}
+
+.category:hover { 
+    opacity: .5;
+    /* color: #B30000; */
+    transition: all .8s ease-in-out;
 }
 
 .project-info {
@@ -77,10 +95,9 @@
     align-items: flex-start;
 }
 
-.home-button, .redirect-button, .scroll-button, .open-button { 
+.home-button, .redirect-button, .scroll-button, .category { 
     cursor: pointer
 }
-
 
 .home-button { 
     background-color: #B30000;
@@ -108,10 +125,9 @@
 }
 
 .name-header:after { 
-    margin: 20px;
+    margin-top: 10px;
+    display: inline-block;
     width: 150px;
-    position:relative;
-    right: -115px;
 }
 
 .skill-elements { 
@@ -131,8 +147,10 @@
 .scroll-button { 
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    font-size: .8rem;
     position: absolute;
     bottom: 20px;
+    z-index: 105;
 
     animation: MoveUpDown 2s cubic-bezier(0.8, 0.7, .6, 0.9) infinite;
 }
@@ -141,17 +159,17 @@
     border-radius: 50%;
     border: solid white 1px;
     overflow: hidden;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 35vw;
+    max-height: 35vw;
     box-shadow: #112219 0px 0px 10px;
 }
 
-.circle.loading { 
+.loading { 
+    border-radius: 50%;
     width: 20px; 
     height: 20px; 
-    z-index: 101;
+    z-index: 1000;
     background-color: white;
-
     animation: pulse 1s linear infinite;
 }
 
@@ -221,4 +239,9 @@
     z-index: 0;
     opacity: .8;
     margin-top: 6.5rem;
+}
+
+/* about */
+.about-text-box {
+    padding-top: 75px;
 }
