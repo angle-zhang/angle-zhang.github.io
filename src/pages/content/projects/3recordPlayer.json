@@ -1,0 +1,8 @@
+{ 
+    "title": "WebGL Record Player", 
+    "date": "", 
+    "description": "Final group project for Intro to Graphics class. I implemented various shaders written in GLSL. Our project was voted 4th for favorite and 7th for most technically impressive.", 
+    "links": [ ["site","https://intro-graphics-master.github.io/term-project-20/"], ["repo","https://github.com/angle-zhang/CS-174A/tree/master/term-project-20"] ],
+    "tags": ["webgl", "glsl", "javascript"], 
+    "icon": "projects/logos/recordplayer_logo"
+}

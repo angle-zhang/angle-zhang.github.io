@@ -4,8 +4,9 @@ import Layout from "../components/layout"
 import Loader from "../components/loader"
 import RedirectButton from "../components/redirectButton"
 import SEO from "../components/seo"
+import Button from "../components/button"
 
-const SecondPage = () => (
+const About = () => (
   <>
   <Loader/>
   <Layout>
@@ -18,7 +19,7 @@ const SecondPage = () => (
     <div> 
       <p class="sm-text-box" style={{paddingTop: `80px`}}>I'm a software engineer and third year Mathematics of Computation student at UCLA. Although the majority of my projects cover web dev, I also design for web and make art! I'm interested in working on projects that combine problem solving and creativity as well as have some visual component.</p>
       <div style={{marginTop: `50px`}}> 
-      <RedirectButton url="https://www.github.com/angle-zhang">github</RedirectButton>    <RedirectButton url="https://www.linkedin.com/in/angela-zhang-a37442168/">linkedin</RedirectButton>     <RedirectButton url="/resume">resume</RedirectButton>
+      <RedirectButton url="https://www.github.com/angle-zhang">github</RedirectButton>    <RedirectButton url="https://www.linkedin.com/in/angela-zhang-a37442168/">linkedin</RedirectButton>     <Button url="/resume">resume</Button>
       </div> 
     </div>
     </div> 
@@ -26,4 +27,4 @@ const SecondPage = () => (
   </>
 )
 
-export default SecondPage;
+export default About;

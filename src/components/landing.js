@@ -2,6 +2,7 @@ import React from "react"
 import Scroll from "./scroll"
 import CircleImage from "./circleImage"
 
+
 const skills = { 
     "Web Dev": ["html5", "css3", "js", "react.js", "redux.js"],
     "Creative Dev": ["webGL", "three.js"],
@@ -41,7 +42,7 @@ const Landing = (props) => (
         <hr/>
         <section id="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
         </div> 
-        <CircleImage img={props.img}/> 
+        <CircleImage src={"landing.jpg"}/> 
         <Scroll down/> 
 </div>
 )

@@ -1,10 +1,12 @@
 import React from "react"
 import Image from "gatsby-image"
 
+import ImageTwo from "./img"
+
 
 const CircleImage = (props) => (  
    <div className="circle center"> 
-      <Image fixed={props.img} alt="illustration of tiger"/> 
+      <ImageTwo file={props.src}/> 
    </div>
 )
 

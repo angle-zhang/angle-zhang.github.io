@@ -13,7 +13,7 @@ const IndexPage = ({data}) => (
   <Loader/>
   <Layout>
     <SEO title="Portfolio" />
-    <Landing img={data.file.childImageSharp.fixed}></Landing> 
+    <Landing></Landing> 
     <div id="work"> 
       <Work />
     </div>
@@ -22,18 +22,18 @@ const IndexPage = ({data}) => (
 )
 
 
-// must be in pages directory to be queried by graphql https://github.com/gatsbyjs/gatsby/issues/5102
-export const query = graphql`
-    query {
-        file(relativePath: { eq: "landing.jpg" }) {
-            childImageSharp {
-              fixed(width: 600, height: 600){
-                ...GatsbyImageSharpFixed
-              }
-            }
-        }      
-    }
-`
+// // must be in pages directory to be queried by graphql https://github.com/gatsbyjs/gatsby/issues/5102
+// export const query = graphql`
+//     query {
+//         file(relativePath: { eq: "landing.jpg" }) {
+//             childImageSharp {
+//               fixed(width: 600, height: 600){
+//                 ...GatsbyImageSharpFixed
+//               }
+//             }
+//         }      
+//     }
+// `
 
 
 export default IndexPage
