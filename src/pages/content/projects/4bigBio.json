@@ -1,8 +1,7 @@
 { 
     "title": "Big Bio", 
     "date": "", 
-    "description": "Developed the frontend for a crowdsourced bio-research resource site. Improved workflow by setting up git version control on the sftp server.", 
+    "description": "I helped develop the frontend for the beta version of a new crowdsourced bio-research resource site. I also improved workflow by setting up git version control on the sftp server.", 
     "links": [ ["site","http://big-bio.org/"] ],
-    "tags": ["html", "javascript", "ui-design", "devops"], 
-    "icon": "projects/logos/bigbio_logo.png"
+    "tags": ["html", "javascript", "ui-design", "devops"]
 }

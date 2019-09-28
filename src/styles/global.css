@@ -233,6 +233,16 @@
     background-color: white;
 }
 
+/* project */
+.project-icon { 
+    background-image: url('../pages/content/placeholder.jpg');
+
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* resume */
 .resume-container { 
     position: relative;
