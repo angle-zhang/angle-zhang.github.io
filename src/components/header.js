@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Button from "./button"
+import Scroll from "./scroll"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -29,7 +30,7 @@ const Header = ({ siteTitle }) => (
 
       <div> 
       <Button url="/about">about</Button>
-      <Button url="#work">work</Button> 
+      <Scroll className="redirect-button" to="#work">work</Scroll> 
       </div>
 
     </div>

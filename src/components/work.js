@@ -23,7 +23,6 @@ const Work = () => (
         render = {data =>{ 
             var projects = [];
             data.allProjectsJson.edges.forEach( (project) => { 
-                console.log(project.node.icon, "icon")
                 projects.push( 
                     <Project title={project.node.title} icon={project.node.icon} desc={project.node.description} tags={project.node.tags} links={project.node.links}>
                     </Project>

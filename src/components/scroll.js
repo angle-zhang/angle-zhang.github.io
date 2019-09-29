@@ -1,8 +1,16 @@
 import React from "react"
+import PropTypes from "prop-types"
 
+/** 
+  @props
+    @to
+**/
 const Scroll = (props) => { 
-    var direction = props.down ? 'down' : 'up';
-    return <a href="#work" className="scroll-button">{'scroll ' + direction}</a> 
-  }
+  return <a href="/#work" className={props.className}>{props.children}</a> 
+}
+
+Scroll.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Scroll;

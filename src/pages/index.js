@@ -6,14 +6,24 @@ import Layout from "../components/layout"
 import Landing from "../components/landing"
 import SEO from "../components/seo"
 
-const IndexPage = ({data}) => (
-  <Layout load>
-    <SEO title="Portfolio" />
-    <Landing></Landing> 
-    <div id="work"> 
-      <Work />
-    </div>
-  </Layout>
-)
+class IndexPage extends React.Component { 
+  componentDidMount() { 
+    if (window.location.hash != null && window.location.hash != '') { 
+      document.querySelector(window.location.hash).scrollIntoView();
+    }
+  }
 
-export default IndexPage
+  render() { 
+    return (
+      <Layout load>
+        <SEO title="Portfolio" />
+        <Landing></Landing> 
+        <div id="work"> 
+          <Work />
+        </div>
+      </Layout>
+    )
+  }
+}
+
+export default IndexPage;

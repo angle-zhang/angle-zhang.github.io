@@ -1,9 +1,20 @@
+@media screen and (max-width: 1024px) { 
+    .project-icon { 
+        display: none;
+    }
+    .project-info { 
+        align-items: center;
+        text-align: center;
+    }
+    .mm-text-box { 
+        width: 60vw;
+    }
+
+}
+
 @media screen and (max-width: 768px) { 
     .categories  {
         display:none;
-    }
-    .project-icon { 
-        display: none;
     }
     .about-container { 
         flex-direction: column;
@@ -19,5 +30,12 @@
         width: 100%;
         text-align: center;
     }
-    
+    .button-container { 
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
 }
