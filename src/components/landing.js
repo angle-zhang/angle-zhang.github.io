@@ -38,7 +38,7 @@ class SkillCategory extends React.Component {
 const Landing = (props) => ( 
     <div>
         <div className="content-container landing-container"> 
-            <h1 className="name-header" style={{paddingTop: `35vh`}}>ANGELA ZHANG</h1>
+            <h1 className="name-header">ANGELA ZHANG</h1>
             <hr/>
             <section class="categories"><span className="square"> </span>  {Object.keys(skills).map( skill => <SkillCategory title={skill} elements={skills[skill]}></SkillCategory>)} </section>  
         </div> 

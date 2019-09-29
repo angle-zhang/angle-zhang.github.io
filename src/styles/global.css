@@ -96,8 +96,20 @@
     align-items: flex-start;
 }
 
+.button-container { 
+    display: flex; 
+    /* justify-content: space-around; */
+}
+
 .home-button, .redirect-button, .scroll-button, .category { 
-    cursor: pointer
+    cursor: pointer;
+    
+}
+
+.contact-link:hover { 
+    color: transparent;
+    /* background-color: #B30000; */
+    transition: color .2s ease-in;
 }
 
 .home-button { 
@@ -168,8 +180,8 @@
 
 .loading { 
     border-radius: 50%;
-    width: 20px; 
-    height: 20px; 
+    width: 20px !important;  
+    height: 20px !important; 
     z-index: 1000;
     background-color: white;
     animation: pulse 1s linear infinite;
