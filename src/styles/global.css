@@ -71,6 +71,7 @@
     text-align: right;
     position:relative;
     z-index: 101;
+    padding-top: 35vh;
 }
 
 .categories { 
@@ -160,8 +161,8 @@
     border-radius: 50%;
     border: solid white 1px;
     overflow: hidden;
-    max-width: 35vw;
-    max-height: 35vw;
+    width: 35vw;
+    height: 35vw;
     box-shadow: #112219 0px 0px 10px;
 }
 
@@ -209,8 +210,8 @@
 }
 
 .tags li { 
-    margin-right: 50px;
-
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .react-tag { 

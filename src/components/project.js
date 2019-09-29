@@ -42,12 +42,12 @@ const Project = (props) =>  {
             </div>
                 <div class="project-info">
                 <h1>{props.title}</h1>
-                <div>
+                <div class="project-content">
                     <p class="mm-text-box">{props.desc} </p>
                     <ul class="tags"> 
                         {props.tags.map( (tag) => <li><span class={tag.substring(0,5)+"-tag tag"}> </span>{tag}</li> )}
                     </ul>
-                    {props.links.map( (link) => (<RedirectButton url={link[1]}>{link[0]}</RedirectButton>) )}
+                    <div class="button-container"> {props.links.map( (link) => (<RedirectButton url={link[1]}>{link[0]}</RedirectButton>) )}</div>
                 </div>
             </div> 
         </div>
