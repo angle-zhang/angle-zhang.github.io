@@ -1,8 +1,0 @@
-{ 
-    "title": "Oncampus", 
-    "date": "", 
-    "description": "Collaborating with a team of six developers, I built the MVP for a UCLA club directory within two school quarters. As a frontend developer, I worked on essential components such as client-side routing, filtering, and redux reducers. I also assisted with product ideation, promotion and launch.", 
-    "links": [ ["site","http://oncampus.us/"] ],
-    "tags": ["react.js", "redux.js", "styled-components"], 
-    "icon": "projects/Oncampus.mp4"
-}

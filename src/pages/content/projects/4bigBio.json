@@ -1,7 +1,0 @@
-{ 
-    "title": "Big Bio", 
-    "date": "", 
-    "description": "I helped develop the frontend for the beta version of a new crowdsourced bio-research resource site. I also improved workflow by setting up git version control on the sftp server.", 
-    "links": [ ["site","http://big-bio.org/"] ],
-    "tags": ["html", "javascript", "ui-design", "devops"]
-}
