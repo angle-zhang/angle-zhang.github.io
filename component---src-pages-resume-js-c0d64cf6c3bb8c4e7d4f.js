@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{223:function(e,n,a){"use strict";a.r(n);var t=a(0),r=a.n(t),c=a(217),s=a(220);n.default=function(){return r.a.createElement(c.a,null,r.a.createElement("div",{class:"resume-container"},r.a.createElement(s.a,{file:"resume.png"})))}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-c0d64cf6c3bb8c4e7d4f.js.map
