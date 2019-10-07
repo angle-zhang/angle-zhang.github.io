@@ -1,4 +1,5 @@
 import React from "react"
+import { PageView, initGA } from '../components/tracking';
 
 import Work from "../components/work"
 
@@ -11,6 +12,8 @@ class IndexPage extends React.Component {
     if (window.location.hash != null && window.location.hash != '') { 
       document.querySelector(window.location.hash).scrollIntoView();
     }
+    initGA('UA-149538553-1');
+    PageView();
   }
 
   render() { 

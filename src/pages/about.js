@@ -9,7 +9,7 @@ const About = () => (
 
   <Layout load>
     <div class="about-container"> 
-    <SEO title="Page two" />
+    <SEO title="About" />
     <div style={{paddingTop: '0'}} className="name-header"> 
       <h2>about</h2>
       <h1>ANGELA ZHANG</h1>
